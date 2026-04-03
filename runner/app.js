@@ -4,139 +4,167 @@ const chrome = require('selenium-webdriver/chrome');
 
 const test_plan = {
     "project_id": "proj-001",
-    "start_url": "https://www.w3schools.com/w3css/w3css_templates.asp",
-    "total_steps": 92,
+    "start_url": "https://www.odoo.com/",
+    "total_steps": 223,
     "steps": [
       {
         "id": "step_1",
         "index": 1,
         "type": "navigate",
-        "url": "https://www.w3schools.com/w3css/w3css_templates.asp"
+        "url": "https://chatgpt.com/c/69ce6d6a-df6c-83e8-a850-bb2f33aef493"
       },
       {
         "id": "step_2",
         "index": 2,
         "type": "navigate",
-        "url": "https://www.w3schools.com/w3css/w3css_templates.asp"
+        "url": "https://www.odoo.com/"
       },
       {
         "id": "step_3",
         "index": 3,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "text=Skip to Content",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "text=Skip to Content",
+          "#wrapwrap .btn.rounded-0",
+          ".btn.rounded-0",
+          ".btn",
+          "div:nth-of-type(1) > a",
+          "a"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Skip to Content"
       },
       {
         "id": "step_4",
         "index": 4,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "#top_menu .start-0.dropdown-menu",
         "selectors": [
-          "#fast-cmp-root",
+          "#top_menu .start-0.dropdown-menu",
+          ".start-0.dropdown-menu",
+          ".start-0",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > div",
           "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Modal opened"
+        "captured_text": "Finance\n                                        \n                                            Account"
       },
       {
         "id": "step_5",
         "index": 5,
-        "type": "click",
-        "action_text": "HTML",
-        "selector": "text=HTML",
+        "type": "assert",
+        "selector": "#wrap .dropdown-menu",
         "selectors": [
-          "text=HTML",
-          "#subtopnav .ga-nav",
-          ".ga-nav",
-          "div:nth-of-type(4) > div > a:nth-of-type(1)",
-          "a"
-        ]
+          "#wrap .dropdown-menu",
+          ".dropdown-menu",
+          "section:nth-of-type(1) > div > div > div > ul",
+          "ul"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Demo with an Expert (1-250 employees)\n                                        \n                     "
       },
       {
         "id": "step_6",
         "index": 6,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/html/default.asp"
+        "type": "assert",
+        "selector": "#wrap .top-0.bottom-0",
+        "selectors": [
+          "#wrap .top-0.bottom-0",
+          ".top-0.bottom-0",
+          ".top-0",
+          "main > div:nth-of-type(1) > section:nth-of-type(10) > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Join 15 million \nhappy\nusers\nwho grow their business with Odoo"
       },
       {
         "id": "step_7",
         "index": 7,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "#footer [role=\"menu\"]",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "#footer [role=\"menu\"]",
+          "[role=\"menu\"]",
+          "#footer .dropdown-menu",
+          ".dropdown-menu",
+          "div > div:nth-of-type(2) > div:nth-of-type(1) > div > div",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "الْعَرَبيّة\n                    \n                    \n    \n                         Català\n         "
       },
       {
         "id": "step_8",
         "index": 8,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "[role=\"dialog\"]",
         "selectors": [
-          "#fast-cmp-root",
+          "[role=\"dialog\"]",
+          "#o_live_modal",
+          ".modal.fade",
+          ".modal",
           "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Modal opened"
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_9",
         "index": 9,
-        "type": "click",
-        "action_text": "CSS",
-        "selector": "text=CSS",
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div",
         "selectors": [
-          "text=CSS",
-          "#subtopnav .ga-nav",
-          ".ga-nav",
-          "div:nth-of-type(4) > div > a:nth-of-type(2)",
-          "a"
-        ]
+          "div:nth-of-type(2) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_10",
         "index": 10,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/css/default.asp"
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div",
+        "selectors": [
+          "div:nth-of-type(2) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_11",
         "index": 11,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_12",
         "index": 12,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "#o_live_modal .modal-body.bg-200",
         "selectors": [
-          "#fast-cmp-root",
+          "#o_live_modal .modal-body.bg-200",
+          ".modal-body.bg-200",
+          ".modal-body",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(2)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -146,43 +174,51 @@ const test_plan = {
       {
         "id": "step_13",
         "index": 13,
-        "type": "click",
-        "action_text": "CSS Icons",
-        "selector": "text=CSS Icons",
+        "type": "assert",
+        "selector": "text=Watch now",
         "selectors": [
-          "text=CSS Icons",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(18)",
-          "a"
-        ]
+          "text=Watch now",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Watch now"
       },
       {
         "id": "step_14",
         "index": 14,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/css/css_icons.asp"
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_15",
         "index": 15,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "#three-ds-container",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "#three-ds-container",
+          "div:nth-of-type(4) > div:nth-of-type(3)",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_16",
         "index": 16,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(4)",
         "selectors": [
-          "#fast-cmp-root",
+          "div:nth-of-type(4) > div:nth-of-type(4)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -192,45 +228,10 @@ const test_plan = {
       {
         "id": "step_17",
         "index": 17,
-        "type": "click",
-        "action_text": "JAVASCRIPT",
-        "selector": "text=JAVASCRIPT",
-        "selectors": [
-          "text=JAVASCRIPT",
-          "#subtopnav .ga-nav",
-          ".ga-nav",
-          "div:nth-of-type(4) > div > a:nth-of-type(3)",
-          "a"
-        ]
-      },
-      {
-        "id": "step_18",
-        "index": 18,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/js/default.asp"
-      },
-      {
-        "id": "step_19",
-        "index": 19,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(6)",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
-        ],
-        "assert_type": "element_visible",
-        "auto_captured": true,
-        "captured_text": "Cookies"
-      },
-      {
-        "id": "step_20",
-        "index": 20,
-        "type": "assert",
-        "selector": "#fast-cmp-root",
-        "selectors": [
-          "#fast-cmp-root",
+          "div:nth-of-type(4) > div:nth-of-type(6)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -238,47 +239,93 @@ const test_plan = {
         "captured_text": "Modal opened"
       },
       {
-        "id": "step_21",
-        "index": 21,
+        "id": "step_18",
+        "index": 18,
         "type": "click",
-        "action_text": "C",
-        "selector": "text=C",
+        "action_text": "Apps",
+        "selector": "[aria-label=\"Apps: use the dropdown menu to switch apps\"]",
         "selectors": [
-          "text=C",
-          "#subtopnav .ga-nav",
-          ".ga-nav",
-          "div:nth-of-type(4) > div > a:nth-of-type(10)",
+          "[aria-label=\"Apps: use the dropdown menu to switch apps\"]",
+          "text=Apps",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > a",
           "a"
         ]
       },
       {
+        "id": "step_19",
+        "index": 19,
+        "type": "click",
+        "action_text": "Accounting",
+        "selector": "text=Accounting",
+        "selectors": [
+          "text=Accounting",
+          ".dropdown-item",
+          "div:nth-of-type(1) > div:nth-of-type(1) > ul > li:nth-of-type(1) > a",
+          "a"
+        ]
+      },
+      {
+        "id": "step_20",
+        "index": 20,
+        "type": "navigate",
+        "url": "https://www.odoo.com/app/accounting"
+      },
+      {
+        "id": "step_21",
+        "index": 21,
+        "type": "assert",
+        "selector": "text=Skip to Content",
+        "selectors": [
+          "text=Skip to Content",
+          "#wrapwrap .btn.rounded-0",
+          ".btn.rounded-0",
+          ".btn",
+          "div:nth-of-type(1) > a",
+          "a"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Skip to Content"
+      },
+      {
         "id": "step_22",
         "index": 22,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/c/index.php"
+        "type": "assert",
+        "selector": "#top_menu .start-0.dropdown-menu",
+        "selectors": [
+          "#top_menu .start-0.dropdown-menu",
+          ".start-0.dropdown-menu",
+          ".start-0",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Finance\n                                        \n                                            Account"
       },
       {
         "id": "step_23",
         "index": 23,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": ".dropdown-menu",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          ".dropdown-menu",
+          "div > div > div > div > ul",
+          "ul"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Demo with an Expert (1-250 employees)\n                                        \n                     "
       },
       {
         "id": "step_24",
         "index": 24,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "#wrap .o_illustration_doodle_01",
         "selectors": [
-          "#fast-cmp-root",
+          "#wrap .o_illustration_doodle_01",
+          ".o_illustration_doodle_01",
+          "div:nth-of-type(1) > main > div:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(1)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -288,93 +335,101 @@ const test_plan = {
       {
         "id": "step_25",
         "index": 25,
-        "type": "click",
-        "action_text": "W3.CSS",
-        "selector": "text=W3.CSS",
+        "type": "assert",
+        "selector": "#wrap .top-0.bottom-0",
         "selectors": [
-          "text=W3.CSS",
-          "#subtopnav .ga-nav",
-          ".ga-nav",
-          "div:nth-of-type(4) > div > a:nth-of-type(9)",
-          "a"
-        ]
+          "#wrap .top-0.bottom-0",
+          ".top-0.bottom-0",
+          ".top-0",
+          "main > div:nth-of-type(1) > section:nth-of-type(10) > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Join 15 million \nhappy\nusers\nwho grow their business with Odoo"
       },
       {
         "id": "step_26",
         "index": 26,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/w3css/default.asp"
+        "type": "assert",
+        "selector": "#footer [role=\"menu\"]",
+        "selectors": [
+          "#footer [role=\"menu\"]",
+          "[role=\"menu\"]",
+          "#footer .dropdown-menu",
+          ".dropdown-menu",
+          "div > div:nth-of-type(2) > div:nth-of-type(1) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "الْعَرَبيّة\n                    \n                    \n    \n                         Català\n         "
       },
       {
         "id": "step_27",
         "index": 27,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "[role=\"dialog\"]",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "[role=\"dialog\"]",
+          "#o_live_modal",
+          ".modal.fade",
+          ".modal",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_28",
         "index": 28,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "div:nth-of-type(2) > div",
         "selectors": [
-          "#fast-cmp-root",
+          "div:nth-of-type(2) > div",
           "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Modal opened"
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_29",
         "index": 29,
-        "type": "click",
-        "action_text": "PYTHON",
-        "selector": "text=PYTHON",
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div",
         "selectors": [
-          "text=PYTHON",
-          "#subtopnav .ga-nav",
-          ".ga-nav",
-          "div:nth-of-type(4) > div > a:nth-of-type(5)",
-          "a"
-        ]
+          "div:nth-of-type(2) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_30",
         "index": 30,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/python/default.asp"
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_31",
         "index": 31,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "#o_live_modal .modal-body.bg-200",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
-        ],
-        "assert_type": "element_visible",
-        "auto_captured": true,
-        "captured_text": "Cookies"
-      },
-      {
-        "id": "step_32",
-        "index": 32,
-        "type": "assert",
-        "selector": "#fast-cmp-root",
-        "selectors": [
-          "#fast-cmp-root",
+          "#o_live_modal .modal-body.bg-200",
+          ".modal-body.bg-200",
+          ".modal-body",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(2)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -382,45 +437,66 @@ const test_plan = {
         "captured_text": "Modal opened"
       },
       {
+        "id": "step_32",
+        "index": 32,
+        "type": "assert",
+        "selector": "text=Watch now",
+        "selectors": [
+          "text=Watch now",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Watch now"
+      },
+      {
         "id": "step_33",
         "index": 33,
-        "type": "click",
-        "action_text": "Python Syntax",
-        "selector": "text=Python Syntax",
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(1)",
         "selectors": [
-          "text=Python Syntax",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(4)",
-          "a"
-        ]
+          "div:nth-of-type(4) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_34",
         "index": 34,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/python/python_syntax.asp"
+        "type": "assert",
+        "selector": "#three-ds-container",
+        "selectors": [
+          "#three-ds-container",
+          "div:nth-of-type(4) > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_35",
         "index": 35,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(4)",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "div:nth-of-type(4) > div:nth-of-type(4)",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_36",
         "index": 36,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(6)",
         "selectors": [
-          "#fast-cmp-root",
+          "div:nth-of-type(4) > div:nth-of-type(6)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -431,88 +507,135 @@ const test_plan = {
         "id": "step_37",
         "index": 37,
         "type": "click",
-        "action_text": "Python Output",
-        "selector": "text=Python Output",
+        "action_text": "Features",
+        "selector": "text=Features",
         "selectors": [
-          "text=Python Output",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(5)",
-          "a"
+          "text=Features",
+          "div > ul:nth-of-type(2) > li:nth-of-type(3) > a > span",
+          "span"
         ]
       },
       {
         "id": "step_38",
         "index": 38,
         "type": "navigate",
-        "url": "https://www.w3schools.com/python/python_output.asp"
+        "url": "https://www.odoo.com/app/accounting-features"
       },
       {
         "id": "step_39",
         "index": 39,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "text=Skip to Content",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "text=Skip to Content",
+          "#wrapwrap .btn.rounded-0",
+          ".btn.rounded-0",
+          ".btn",
+          "div:nth-of-type(1) > a",
+          "a"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Skip to Content"
       },
       {
         "id": "step_40",
         "index": 40,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "#top_menu .start-0.dropdown-menu",
         "selectors": [
-          "#fast-cmp-root",
+          "#top_menu .start-0.dropdown-menu",
+          ".start-0.dropdown-menu",
+          ".start-0",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > div",
           "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Modal opened"
+        "captured_text": "Finance\n                                        \n                                            Account"
       },
       {
         "id": "step_41",
         "index": 41,
-        "type": "click",
-        "action_text": "Python Data Types",
-        "selector": "text=Python Data Types",
+        "type": "assert",
+        "selector": "#footer [role=\"menu\"]",
         "selectors": [
-          "text=Python Data Types",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(8)",
-          "a"
-        ]
+          "#footer [role=\"menu\"]",
+          "[role=\"menu\"]",
+          "#footer .dropdown-menu",
+          ".dropdown-menu",
+          "div > div:nth-of-type(2) > div:nth-of-type(1) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "الْعَرَبيّة\n                    \n                    \n    \n                         Català\n         "
       },
       {
         "id": "step_42",
         "index": 42,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/python/python_datatypes.asp"
+        "type": "assert",
+        "selector": "[role=\"dialog\"]",
+        "selectors": [
+          "[role=\"dialog\"]",
+          "#o_live_modal",
+          ".modal.fade",
+          ".modal",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_43",
         "index": 43,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "div:nth-of-type(2) > div",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "div:nth-of-type(2) > div",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_44",
         "index": 44,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "div:nth-of-type(2) > div > div",
         "selectors": [
-          "#fast-cmp-root",
+          "div:nth-of-type(2) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_45",
+        "index": 45,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_46",
+        "index": 46,
+        "type": "assert",
+        "selector": "#o_live_modal .modal-body.bg-200",
+        "selectors": [
+          "#o_live_modal .modal-body.bg-200",
+          ".modal-body.bg-200",
+          ".modal-body",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(2)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -520,47 +643,26 @@ const test_plan = {
         "captured_text": "Modal opened"
       },
       {
-        "id": "step_45",
-        "index": 45,
-        "type": "click",
-        "action_text": "JQUERY",
-        "selector": "text=JQUERY",
-        "selectors": [
-          "text=JQUERY",
-          "#subtopnav .ga-nav",
-          ".ga-nav",
-          "div:nth-of-type(4) > div > a:nth-of-type(16)",
-          "a"
-        ]
-      },
-      {
-        "id": "step_46",
-        "index": 46,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/jquery/default.asp"
-      },
-      {
         "id": "step_47",
         "index": 47,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "text=Watch now",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "text=Watch now",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(3)",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Watch now"
       },
       {
         "id": "step_48",
         "index": 48,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(1)",
         "selectors": [
-          "#fast-cmp-root",
+          "div:nth-of-type(4) > div:nth-of-type(1)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -570,43 +672,37 @@ const test_plan = {
       {
         "id": "step_49",
         "index": 49,
-        "type": "click",
-        "action_text": "jQuery Hide/Show",
-        "selector": "text=jQuery Hide/Show",
+        "type": "assert",
+        "selector": "#three-ds-container",
         "selectors": [
-          "text=jQuery Hide/Show",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(7)",
-          "a"
-        ]
+          "#three-ds-container",
+          "div:nth-of-type(4) > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_50",
         "index": 50,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/jquery/jquery_hide_show.asp"
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(4)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(4)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_51",
         "index": 51,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(6)",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
-        ],
-        "assert_type": "element_visible",
-        "auto_captured": true,
-        "captured_text": "Cookies"
-      },
-      {
-        "id": "step_52",
-        "index": 52,
-        "type": "assert",
-        "selector": "#fast-cmp-root",
-        "selectors": [
-          "#fast-cmp-root",
+          "div:nth-of-type(4) > div:nth-of-type(6)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -614,91 +710,138 @@ const test_plan = {
         "captured_text": "Modal opened"
       },
       {
+        "id": "step_52",
+        "index": 52,
+        "type": "click",
+        "action_text": "Automation",
+        "selector": "text=Automation",
+        "selectors": [
+          "text=Automation",
+          "div > ul:nth-of-type(2) > li:nth-of-type(4) > a > span",
+          "span"
+        ]
+      },
+      {
         "id": "step_53",
         "index": 53,
-        "type": "click",
-        "action_text": "jQuery Animate",
-        "selector": "text=jQuery Animate",
-        "selectors": [
-          "text=jQuery Animate",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(10)",
-          "a"
-        ]
+        "type": "navigate",
+        "url": "https://www.odoo.com/app/invoice-automation"
       },
       {
         "id": "step_54",
         "index": 54,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/jquery/jquery_animate.asp"
+        "type": "assert",
+        "selector": "text=Skip to Content",
+        "selectors": [
+          "text=Skip to Content",
+          "#wrapwrap .btn.rounded-0",
+          ".btn.rounded-0",
+          ".btn",
+          "div:nth-of-type(1) > a",
+          "a"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Skip to Content"
       },
       {
         "id": "step_55",
         "index": 55,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "#top_menu .start-0.dropdown-menu",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "#top_menu .start-0.dropdown-menu",
+          ".start-0.dropdown-menu",
+          ".start-0",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > div",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Finance\n                                        \n                                            Account"
       },
       {
         "id": "step_56",
         "index": 56,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "#footer [role=\"menu\"]",
         "selectors": [
-          "#fast-cmp-root",
+          "#footer [role=\"menu\"]",
+          "[role=\"menu\"]",
+          "#footer .dropdown-menu",
+          ".dropdown-menu",
+          "div > div:nth-of-type(2) > div:nth-of-type(1) > div > div",
           "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Modal opened"
+        "captured_text": "الْعَرَبيّة\n                    \n                    \n    \n                         Català\n         "
       },
       {
         "id": "step_57",
         "index": 57,
-        "type": "click",
-        "action_text": "jQuery Set",
-        "selector": "text=jQuery Set",
+        "type": "assert",
+        "selector": "[role=\"dialog\"]",
         "selectors": [
-          "text=jQuery Set",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(15)",
-          "a"
-        ]
+          "[role=\"dialog\"]",
+          "#o_live_modal",
+          ".modal.fade",
+          ".modal",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_58",
         "index": 58,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/jquery/jquery_dom_set.asp"
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div",
+        "selectors": [
+          "div:nth-of-type(2) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_59",
         "index": 59,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "div:nth-of-type(2) > div > div",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "div:nth-of-type(2) > div > div",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_60",
         "index": 60,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
         "selectors": [
-          "#fast-cmp-root",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_61",
+        "index": 61,
+        "type": "assert",
+        "selector": "#o_live_modal .modal-body.bg-200",
+        "selectors": [
+          "#o_live_modal .modal-body.bg-200",
+          ".modal-body.bg-200",
+          ".modal-body",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(2)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -706,47 +849,40 @@ const test_plan = {
         "captured_text": "Modal opened"
       },
       {
-        "id": "step_61",
-        "index": 61,
-        "type": "click",
-        "action_text": "EXCEL",
-        "selector": "text=EXCEL",
-        "selectors": [
-          "text=EXCEL",
-          "#subtopnav .ga-nav",
-          ".ga-nav",
-          "div:nth-of-type(4) > div > a:nth-of-type(17)",
-          "a"
-        ]
-      },
-      {
         "id": "step_62",
         "index": 62,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/excel/index.php"
+        "type": "assert",
+        "selector": "text=Watch now",
+        "selectors": [
+          "text=Watch now",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Watch now"
       },
       {
         "id": "step_63",
         "index": 63,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(1)",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "div:nth-of-type(4) > div:nth-of-type(1)",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_64",
         "index": 64,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "#three-ds-container",
         "selectors": [
-          "#fast-cmp-root",
+          "#three-ds-container",
+          "div:nth-of-type(4) > div:nth-of-type(3)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -756,43 +892,10 @@ const test_plan = {
       {
         "id": "step_65",
         "index": 65,
-        "type": "click",
-        "action_text": "Excel Overview",
-        "selector": "text=Excel Overview",
-        "selectors": [
-          "text=Excel Overview",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(4)",
-          "a"
-        ]
-      },
-      {
-        "id": "step_66",
-        "index": 66,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/excel/excel_overview.php"
-      },
-      {
-        "id": "step_67",
-        "index": 67,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(4)",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
-        ],
-        "assert_type": "element_visible",
-        "auto_captured": true,
-        "captured_text": "Cookies"
-      },
-      {
-        "id": "step_68",
-        "index": 68,
-        "type": "assert",
-        "selector": "#fast-cmp-root",
-        "selectors": [
-          "#fast-cmp-root",
+          "div:nth-of-type(4) > div:nth-of-type(4)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -800,137 +903,202 @@ const test_plan = {
         "captured_text": "Modal opened"
       },
       {
+        "id": "step_66",
+        "index": 66,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(6)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(6)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_67",
+        "index": 67,
+        "type": "click",
+        "action_text": "Find an Accountant",
+        "selector": "text=Find an Accountant",
+        "selectors": [
+          "text=Find an Accountant",
+          "div > ul:nth-of-type(2) > li:nth-of-type(5) > a > span",
+          "span"
+        ]
+      },
+      {
+        "id": "step_68",
+        "index": 68,
+        "type": "navigate",
+        "url": "https://www.odoo.com/accounting-firms"
+      },
+      {
         "id": "step_69",
         "index": 69,
-        "type": "click",
-        "action_text": "Excel Fill",
-        "selector": "text=Excel Fill",
+        "type": "assert",
+        "selector": "text=Skip to Content",
         "selectors": [
-          "text=Excel Fill",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(7)",
+          "text=Skip to Content",
+          "#wrapwrap .btn.rounded-0",
+          ".btn.rounded-0",
+          ".btn",
+          "div:nth-of-type(1) > a",
           "a"
-        ]
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Skip to Content"
       },
       {
         "id": "step_70",
         "index": 70,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/excel/excel_filling.php"
+        "type": "assert",
+        "selector": "#top_menu .start-0.dropdown-menu",
+        "selectors": [
+          "#top_menu .start-0.dropdown-menu",
+          ".start-0.dropdown-menu",
+          ".start-0",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Finance\n                                        \n                                            Account"
       },
       {
         "id": "step_71",
         "index": 71,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "#wrap .dropdown-menu",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "#wrap .dropdown-menu",
+          ".dropdown-menu",
+          "div:nth-of-type(1) > div > div:nth-of-type(1) > div:nth-of-type(2) > div",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "All levels\n                        Ready"
       },
       {
         "id": "step_72",
         "index": 72,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "[role=\"dialog\"]",
         "selectors": [
-          "#fast-cmp-root",
+          "[role=\"dialog\"]",
+          "#wrap [role=\"dialog\"]",
+          "text=World Map",
+          "#wrap .modal.fade",
+          ".modal.fade",
+          ".modal",
+          "div:nth-of-type(1) > div > div:nth-of-type(1) > div:nth-of-type(4) > div:nth-of-type(1)",
           "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Modal opened"
+        "captured_text": "World Map"
       },
       {
         "id": "step_73",
         "index": 73,
-        "type": "click",
-        "action_text": "Excel Add Cells",
-        "selector": "text=Excel Add Cells",
+        "type": "assert",
+        "selector": "text=World Map",
         "selectors": [
-          "text=Excel Add Cells",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(9)",
-          "a"
-        ]
+          "text=World Map",
+          "[role=\"dialog\"] .modal-lg",
+          ".modal-lg",
+          "div > div:nth-of-type(1) > div:nth-of-type(4) > div:nth-of-type(1) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "World Map"
       },
       {
         "id": "step_74",
         "index": 74,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/excel/excel_add_cells.php"
+        "type": "assert",
+        "selector": "#o_wcrm_offcanvas",
+        "selectors": [
+          "#o_wcrm_offcanvas",
+          "#wrap .offcanvas.offcanvas-end",
+          ".offcanvas.offcanvas-end",
+          ".offcanvas",
+          "main > div:nth-of-type(1) > div:nth-of-type(1) > div > div:nth-of-type(2)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Filters\n                \n            \n            \n                \n                    \n           "
       },
       {
         "id": "step_75",
         "index": 75,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "#footer [role=\"menu\"]",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "#footer [role=\"menu\"]",
+          "[role=\"menu\"]",
+          "#footer .dropdown-menu",
+          ".dropdown-menu",
+          "div > div:nth-of-type(2) > div:nth-of-type(1) > div > div",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "الْعَرَبيّة\n                    \n                    \n    \n                         Català\n         "
       },
       {
         "id": "step_76",
         "index": 76,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "div:nth-of-type(2) > div",
         "selectors": [
-          "#fast-cmp-root",
+          "div:nth-of-type(2) > div",
           "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Modal opened"
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_77",
         "index": 77,
-        "type": "click",
-        "action_text": "Excel Relative Reference",
-        "selector": "text=Excel Relative Reference",
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div",
         "selectors": [
-          "text=Excel Relative Reference",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(13)",
-          "a"
-        ]
+          "div:nth-of-type(2) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_78",
         "index": 78,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/excel/excel_rel_ref.php"
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
       },
       {
         "id": "step_79",
         "index": 79,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "#o_live_modal .modal-body.bg-200",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
-        ],
-        "assert_type": "element_visible",
-        "auto_captured": true,
-        "captured_text": "Cookies"
-      },
-      {
-        "id": "step_80",
-        "index": 80,
-        "type": "assert",
-        "selector": "#fast-cmp-root",
-        "selectors": [
-          "#fast-cmp-root",
+          "#o_live_modal .modal-body.bg-200",
+          ".modal-body.bg-200",
+          ".modal-body",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(2)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -938,45 +1106,66 @@ const test_plan = {
         "captured_text": "Modal opened"
       },
       {
+        "id": "step_80",
+        "index": 80,
+        "type": "assert",
+        "selector": "text=Watch now",
+        "selectors": [
+          "text=Watch now",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Watch now"
+      },
+      {
         "id": "step_81",
         "index": 81,
-        "type": "click",
-        "action_text": "Excel Functions",
-        "selector": "text=Excel Functions",
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(1)",
         "selectors": [
-          "text=Excel Functions",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(17)",
-          "a"
-        ]
+          "div:nth-of-type(4) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_82",
         "index": 82,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/excel/excel_functions.php"
+        "type": "assert",
+        "selector": "#three-ds-container",
+        "selectors": [
+          "#three-ds-container",
+          "div:nth-of-type(4) > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_83",
         "index": 83,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(4)",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "div:nth-of-type(4) > div:nth-of-type(4)",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_84",
         "index": 84,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(6)",
         "selectors": [
-          "#fast-cmp-root",
+          "div:nth-of-type(4) > div:nth-of-type(6)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -987,11 +1176,11 @@ const test_plan = {
         "id": "step_85",
         "index": 85,
         "type": "click",
-        "action_text": "Excel Conditional Format",
-        "selector": "text=Excel Conditional Format",
+        "action_text": "AGARWAL SHUBHAM & ASSOCIATES, CA SHUBHAM AGARWAL",
+        "selector": "text=AGARWAL SHUBHAM & ASSOCIATES, CA SHUBHAM AGARWAL",
         "selectors": [
-          "text=Excel Conditional Format",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(29)",
+          "text=AGARWAL SHUBHAM & ASSOCIATES, CA SHUBHAM AGARWAL",
+          "div:nth-of-type(1) > div > div > h5 > a",
           "a"
         ]
       },
@@ -999,30 +1188,29 @@ const test_plan = {
         "id": "step_86",
         "index": 86,
         "type": "navigate",
-        "url": "https://www.w3schools.com/excel/excel_conditional_formatting.php"
+        "url": "https://www.odoo.com/accounting-firms/agarwal-shubham-associates-ca-shubham-agarwal-12715582?country_id=101"
       },
       {
         "id": "step_87",
         "index": 87,
         "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(1)",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
+          "div:nth-of-type(4) > div:nth-of-type(1)",
+          "div"
         ],
         "assert_type": "element_visible",
         "auto_captured": true,
-        "captured_text": "Cookies"
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_88",
         "index": 88,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "#three-ds-container",
         "selectors": [
-          "#fast-cmp-root",
+          "#three-ds-container",
+          "div:nth-of-type(4) > div:nth-of-type(3)",
           "div"
         ],
         "assert_type": "element_visible",
@@ -1032,43 +1220,1790 @@ const test_plan = {
       {
         "id": "step_89",
         "index": 89,
-        "type": "click",
-        "action_text": "Excel Color Scales",
-        "selector": "text=Excel Color Scales",
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(4)",
         "selectors": [
-          "text=Excel Color Scales",
-          "div > div:nth-of-type(1) > div > div > a:nth-of-type(33)",
-          "a"
-        ]
+          "div:nth-of-type(4) > div:nth-of-type(4)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_90",
         "index": 90,
-        "type": "navigate",
-        "url": "https://www.w3schools.com/excel/excel_cf_color_scales.php"
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(6)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(6)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
       },
       {
         "id": "step_91",
         "index": 91,
-        "type": "assert",
-        "selector": "#fast-cmp-settings",
+        "type": "click",
+        "action_text": "Accounting",
+        "selector": "text=Accounting",
         "selectors": [
-          "#fast-cmp-settings",
-          "button[type=\"submit\"]",
-          "text=Cookies",
-          "button"
-        ],
-        "assert_type": "element_visible",
-        "auto_captured": true,
-        "captured_text": "Cookies"
+          "text=Accounting",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > a",
+          "a"
+        ]
       },
       {
         "id": "step_92",
         "index": 92,
         "type": "assert",
-        "selector": "#fast-cmp-root",
+        "selector": "#top_menu .start-0.dropdown-menu",
         "selectors": [
-          "#fast-cmp-root",
+          "#top_menu .start-0.dropdown-menu",
+          ".start-0.dropdown-menu",
+          ".start-0",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Finance\n                                        \n                                            Account"
+      },
+      {
+        "id": "step_93",
+        "index": 93,
+        "type": "click",
+        "action_text": "Invoicing",
+        "selector": "text=Invoicing",
+        "selectors": [
+          "text=Invoicing",
+          ".dropdown-item",
+          "div:nth-of-type(1) > div:nth-of-type(1) > ul > li:nth-of-type(2) > a",
+          "a"
+        ]
+      },
+      {
+        "id": "step_94",
+        "index": 94,
+        "type": "navigate",
+        "url": "https://www.odoo.com/app/invoicing"
+      },
+      {
+        "id": "step_95",
+        "index": 95,
+        "type": "assert",
+        "selector": "text=Skip to Content",
+        "selectors": [
+          "text=Skip to Content",
+          "#wrapwrap .btn.rounded-0",
+          ".btn.rounded-0",
+          ".btn",
+          "div:nth-of-type(1) > a",
+          "a"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Skip to Content"
+      },
+      {
+        "id": "step_96",
+        "index": 96,
+        "type": "assert",
+        "selector": "#top_menu .start-0.dropdown-menu",
+        "selectors": [
+          "#top_menu .start-0.dropdown-menu",
+          ".start-0.dropdown-menu",
+          ".start-0",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Finance\n                                        \n                                            Account"
+      },
+      {
+        "id": "step_97",
+        "index": 97,
+        "type": "assert",
+        "selector": ".dropdown-menu",
+        "selectors": [
+          ".dropdown-menu",
+          "div > div > div > div > ul",
+          "ul"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Demo with an Expert (1-250 employees)\n                                        \n                     "
+      },
+      {
+        "id": "step_98",
+        "index": 98,
+        "type": "assert",
+        "selector": "#wrap .top-0.bottom-0",
+        "selectors": [
+          "#wrap .top-0.bottom-0",
+          ".top-0.bottom-0",
+          ".top-0",
+          "main > div:nth-of-type(1) > section:nth-of-type(9) > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Join 15 million \nhappy\nusers\nwho grow their business with Odoo"
+      },
+      {
+        "id": "step_99",
+        "index": 99,
+        "type": "assert",
+        "selector": "#footer [role=\"menu\"]",
+        "selectors": [
+          "#footer [role=\"menu\"]",
+          "[role=\"menu\"]",
+          "#footer .dropdown-menu",
+          ".dropdown-menu",
+          "div > div:nth-of-type(2) > div:nth-of-type(1) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "الْعَرَبيّة\n                    \n                    \n    \n                         Català\n         "
+      },
+      {
+        "id": "step_100",
+        "index": 100,
+        "type": "assert",
+        "selector": "[role=\"dialog\"]",
+        "selectors": [
+          "[role=\"dialog\"]",
+          "#o_live_modal",
+          ".modal.fade",
+          ".modal",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_101",
+        "index": 101,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div",
+        "selectors": [
+          "div:nth-of-type(2) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_102",
+        "index": 102,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div",
+        "selectors": [
+          "div:nth-of-type(2) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_103",
+        "index": 103,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_104",
+        "index": 104,
+        "type": "assert",
+        "selector": "#o_live_modal .modal-body.bg-200",
+        "selectors": [
+          "#o_live_modal .modal-body.bg-200",
+          ".modal-body.bg-200",
+          ".modal-body",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(2)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_105",
+        "index": 105,
+        "type": "assert",
+        "selector": "text=Watch now",
+        "selectors": [
+          "text=Watch now",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Watch now"
+      },
+      {
+        "id": "step_106",
+        "index": 106,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_107",
+        "index": 107,
+        "type": "assert",
+        "selector": "#three-ds-container",
+        "selectors": [
+          "#three-ds-container",
+          "div:nth-of-type(4) > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_108",
+        "index": 108,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(4)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(4)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_109",
+        "index": 109,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(6)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(6)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_110",
+        "index": 110,
+        "type": "click",
+        "action_text": "Features",
+        "selector": "text=Features",
+        "selectors": [
+          "text=Features",
+          "div > ul:nth-of-type(2) > li:nth-of-type(3) > a > span",
+          "span"
+        ]
+      },
+      {
+        "id": "step_111",
+        "index": 111,
+        "type": "navigate",
+        "url": "https://www.odoo.com/app/invoicing-features"
+      },
+      {
+        "id": "step_112",
+        "index": 112,
+        "type": "assert",
+        "selector": "text=Skip to Content",
+        "selectors": [
+          "text=Skip to Content",
+          "#wrapwrap .btn.rounded-0",
+          ".btn.rounded-0",
+          ".btn",
+          "div:nth-of-type(1) > a",
+          "a"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Skip to Content"
+      },
+      {
+        "id": "step_113",
+        "index": 113,
+        "type": "assert",
+        "selector": "#top_menu .start-0.dropdown-menu",
+        "selectors": [
+          "#top_menu .start-0.dropdown-menu",
+          ".start-0.dropdown-menu",
+          ".start-0",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Finance\n                                        \n                                            Account"
+      },
+      {
+        "id": "step_114",
+        "index": 114,
+        "type": "assert",
+        "selector": "#footer [role=\"menu\"]",
+        "selectors": [
+          "#footer [role=\"menu\"]",
+          "[role=\"menu\"]",
+          "#footer .dropdown-menu",
+          ".dropdown-menu",
+          "div > div:nth-of-type(2) > div:nth-of-type(1) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "الْعَرَبيّة\n                    \n                    \n    \n                         Català\n         "
+      },
+      {
+        "id": "step_115",
+        "index": 115,
+        "type": "assert",
+        "selector": "[role=\"dialog\"]",
+        "selectors": [
+          "[role=\"dialog\"]",
+          "#o_live_modal",
+          ".modal.fade",
+          ".modal",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_116",
+        "index": 116,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div",
+        "selectors": [
+          "div:nth-of-type(2) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_117",
+        "index": 117,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div",
+        "selectors": [
+          "div:nth-of-type(2) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_118",
+        "index": 118,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_119",
+        "index": 119,
+        "type": "assert",
+        "selector": "#o_live_modal .modal-body.bg-200",
+        "selectors": [
+          "#o_live_modal .modal-body.bg-200",
+          ".modal-body.bg-200",
+          ".modal-body",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(2)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_120",
+        "index": 120,
+        "type": "assert",
+        "selector": "text=Watch now",
+        "selectors": [
+          "text=Watch now",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Watch now"
+      },
+      {
+        "id": "step_121",
+        "index": 121,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_122",
+        "index": 122,
+        "type": "assert",
+        "selector": "#three-ds-container",
+        "selectors": [
+          "#three-ds-container",
+          "div:nth-of-type(4) > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_123",
+        "index": 123,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(4)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(4)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_124",
+        "index": 124,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(6)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(6)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_125",
+        "index": 125,
+        "type": "click",
+        "action_text": "Invoicing",
+        "selector": "text=Invoicing",
+        "selectors": [
+          "text=Invoicing",
+          "div > ul:nth-of-type(2) > li:nth-of-type(1) > a > span",
+          "span"
+        ]
+      },
+      {
+        "id": "step_126",
+        "index": 126,
+        "type": "click",
+        "action_text": "CRM",
+        "selector": "text=CRM",
+        "selectors": [
+          "text=CRM",
+          ".dropdown-item",
+          "div:nth-of-type(1) > div:nth-of-type(2) > ul > li:nth-of-type(1) > a",
+          "a"
+        ]
+      },
+      {
+        "id": "step_127",
+        "index": 127,
+        "type": "navigate",
+        "url": "https://www.odoo.com/app/crm"
+      },
+      {
+        "id": "step_128",
+        "index": 128,
+        "type": "assert",
+        "selector": "text=Skip to Content",
+        "selectors": [
+          "text=Skip to Content",
+          "#wrapwrap .btn.rounded-0",
+          ".btn.rounded-0",
+          ".btn",
+          "div:nth-of-type(1) > a",
+          "a"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Skip to Content"
+      },
+      {
+        "id": "step_129",
+        "index": 129,
+        "type": "assert",
+        "selector": "#top_menu .start-0.dropdown-menu",
+        "selectors": [
+          "#top_menu .start-0.dropdown-menu",
+          ".start-0.dropdown-menu",
+          ".start-0",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Finance\n                                        \n                                            Account"
+      },
+      {
+        "id": "step_130",
+        "index": 130,
+        "type": "assert",
+        "selector": ".dropdown-menu",
+        "selectors": [
+          ".dropdown-menu",
+          "div > div > div > div > ul",
+          "ul"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Demo with an Expert (1-250 employees)\n                                        \n                     "
+      },
+      {
+        "id": "step_131",
+        "index": 131,
+        "type": "assert",
+        "selector": "#wrap .o_illustration_doodle_01",
+        "selectors": [
+          "#wrap .o_illustration_doodle_01",
+          ".o_illustration_doodle_01",
+          "div:nth-of-type(1) > main > div:nth-of-type(1) > section:nth-of-type(2) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_132",
+        "index": 132,
+        "type": "assert",
+        "selector": "#wrap .top-0.bottom-0",
+        "selectors": [
+          "#wrap .top-0.bottom-0",
+          ".top-0.bottom-0",
+          ".top-0",
+          "main > div:nth-of-type(1) > section:nth-of-type(11) > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Join 15 million \nhappy\nusers\nwho grow their business with Odoo"
+      },
+      {
+        "id": "step_133",
+        "index": 133,
+        "type": "assert",
+        "selector": "#footer [role=\"menu\"]",
+        "selectors": [
+          "#footer [role=\"menu\"]",
+          "[role=\"menu\"]",
+          "#footer .dropdown-menu",
+          ".dropdown-menu",
+          "div > div:nth-of-type(2) > div:nth-of-type(1) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "الْعَرَبيّة\n                    \n                    \n    \n                         Català\n         "
+      },
+      {
+        "id": "step_134",
+        "index": 134,
+        "type": "assert",
+        "selector": "[role=\"dialog\"]",
+        "selectors": [
+          "[role=\"dialog\"]",
+          "#o_live_modal",
+          ".modal.fade",
+          ".modal",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_135",
+        "index": 135,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div",
+        "selectors": [
+          "div:nth-of-type(2) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_136",
+        "index": 136,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div",
+        "selectors": [
+          "div:nth-of-type(2) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_137",
+        "index": 137,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_138",
+        "index": 138,
+        "type": "assert",
+        "selector": "#o_live_modal .modal-body.bg-200",
+        "selectors": [
+          "#o_live_modal .modal-body.bg-200",
+          ".modal-body.bg-200",
+          ".modal-body",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(2)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_139",
+        "index": 139,
+        "type": "assert",
+        "selector": "text=Watch now",
+        "selectors": [
+          "text=Watch now",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Watch now"
+      },
+      {
+        "id": "step_140",
+        "index": 140,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_141",
+        "index": 141,
+        "type": "assert",
+        "selector": "#three-ds-container",
+        "selectors": [
+          "#three-ds-container",
+          "div:nth-of-type(4) > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_142",
+        "index": 142,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(4)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(4)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_143",
+        "index": 143,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(6)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(6)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_144",
+        "index": 144,
+        "type": "click",
+        "action_text": "Features",
+        "selector": "text=Features",
+        "selectors": [
+          "text=Features",
+          "div > ul:nth-of-type(2) > li:nth-of-type(3) > a > span",
+          "span"
+        ]
+      },
+      {
+        "id": "step_145",
+        "index": 145,
+        "type": "navigate",
+        "url": "https://www.odoo.com/app/crm-features"
+      },
+      {
+        "id": "step_146",
+        "index": 146,
+        "type": "assert",
+        "selector": "text=Skip to Content",
+        "selectors": [
+          "text=Skip to Content",
+          "#wrapwrap .btn.rounded-0",
+          ".btn.rounded-0",
+          ".btn",
+          "div:nth-of-type(1) > a",
+          "a"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Skip to Content"
+      },
+      {
+        "id": "step_147",
+        "index": 147,
+        "type": "assert",
+        "selector": "#top_menu .start-0.dropdown-menu",
+        "selectors": [
+          "#top_menu .start-0.dropdown-menu",
+          ".start-0.dropdown-menu",
+          ".start-0",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Finance\n                                        \n                                            Account"
+      },
+      {
+        "id": "step_148",
+        "index": 148,
+        "type": "assert",
+        "selector": "#footer [role=\"menu\"]",
+        "selectors": [
+          "#footer [role=\"menu\"]",
+          "[role=\"menu\"]",
+          "#footer .dropdown-menu",
+          ".dropdown-menu",
+          "div > div:nth-of-type(2) > div:nth-of-type(1) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "الْعَرَبيّة\n                    \n                    \n    \n                         Català\n         "
+      },
+      {
+        "id": "step_149",
+        "index": 149,
+        "type": "assert",
+        "selector": "[role=\"dialog\"]",
+        "selectors": [
+          "[role=\"dialog\"]",
+          "#o_live_modal",
+          ".modal.fade",
+          ".modal",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_150",
+        "index": 150,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div",
+        "selectors": [
+          "div:nth-of-type(2) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_151",
+        "index": 151,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div",
+        "selectors": [
+          "div:nth-of-type(2) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_152",
+        "index": 152,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_153",
+        "index": 153,
+        "type": "assert",
+        "selector": "#o_live_modal .modal-body.bg-200",
+        "selectors": [
+          "#o_live_modal .modal-body.bg-200",
+          ".modal-body.bg-200",
+          ".modal-body",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(2)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_154",
+        "index": 154,
+        "type": "assert",
+        "selector": "text=Watch now",
+        "selectors": [
+          "text=Watch now",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Watch now"
+      },
+      {
+        "id": "step_155",
+        "index": 155,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_156",
+        "index": 156,
+        "type": "assert",
+        "selector": "#three-ds-container",
+        "selectors": [
+          "#three-ds-container",
+          "div:nth-of-type(4) > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_157",
+        "index": 157,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(4)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(4)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_158",
+        "index": 158,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(6)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(6)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_159",
+        "index": 159,
+        "type": "click",
+        "action_text": "Opportunities",
+        "selector": "text=Opportunities",
+        "selectors": [
+          "text=Opportunities",
+          "#features_affix .list-group-item.py-1",
+          ".list-group-item.py-1",
+          ".list-group-item",
+          "div > div > div:nth-of-type(1) > nav > a:nth-of-type(3)",
+          "a"
+        ]
+      },
+      {
+        "id": "step_160",
+        "index": 160,
+        "type": "navigate",
+        "url": "https://www.odoo.com/app/crm-features#part_3"
+      },
+      {
+        "id": "step_161",
+        "index": 161,
+        "type": "click",
+        "action_text": "Efficient Communication",
+        "selector": "text=Efficient Communication",
+        "selectors": [
+          "text=Efficient Communication",
+          "#features_affix .list-group-item.py-1",
+          ".list-group-item.py-1",
+          ".list-group-item",
+          "div > div > div:nth-of-type(1) > nav > a:nth-of-type(5)",
+          "a"
+        ]
+      },
+      {
+        "id": "step_162",
+        "index": 162,
+        "type": "navigate",
+        "url": "https://www.odoo.com/app/crm-features#part_5"
+      },
+      {
+        "id": "step_163",
+        "index": 163,
+        "type": "click",
+        "action_text": "Integrations",
+        "selector": "text=Integrations",
+        "selectors": [
+          "text=Integrations",
+          "#features_affix .list-group-item.py-1",
+          ".list-group-item.py-1",
+          ".list-group-item",
+          "div > div > div:nth-of-type(1) > nav > a:nth-of-type(7)",
+          "a"
+        ]
+      },
+      {
+        "id": "step_164",
+        "index": 164,
+        "type": "navigate",
+        "url": "https://www.odoo.com/app/crm-features#part_7"
+      },
+      {
+        "id": "step_165",
+        "index": 165,
+        "type": "click",
+        "action_text": "Sell Faster",
+        "selector": "text=Sell Faster",
+        "selectors": [
+          "text=Sell Faster",
+          "#features_affix .list-group-item.py-1",
+          ".list-group-item.py-1",
+          ".list-group-item",
+          "div > div > div:nth-of-type(1) > nav > a:nth-of-type(1)",
+          "a"
+        ]
+      },
+      {
+        "id": "step_166",
+        "index": 166,
+        "type": "navigate",
+        "url": "https://www.odoo.com/app/crm-features#part_1"
+      },
+      {
+        "id": "step_167",
+        "index": 167,
+        "type": "click",
+        "action_text": "CRM",
+        "selector": "text=CRM",
+        "selectors": [
+          "text=CRM",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > a",
+          "a"
+        ]
+      },
+      {
+        "id": "step_168",
+        "index": 168,
+        "type": "click",
+        "action_text": "Website Builder",
+        "selector": "text=Website Builder",
+        "selectors": [
+          "text=Website Builder",
+          ".dropdown-item",
+          "div:nth-of-type(1) > div:nth-of-type(3) > ul > li:nth-of-type(1) > a",
+          "a"
+        ]
+      },
+      {
+        "id": "step_169",
+        "index": 169,
+        "type": "navigate",
+        "url": "https://www.odoo.com/app/website"
+      },
+      {
+        "id": "step_170",
+        "index": 170,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_171",
+        "index": 171,
+        "type": "assert",
+        "selector": "#three-ds-container",
+        "selectors": [
+          "#three-ds-container",
+          "div:nth-of-type(4) > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_172",
+        "index": 172,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(4)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(4)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_173",
+        "index": 173,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(6)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(6)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_174",
+        "index": 174,
+        "type": "click",
+        "action_text": "Features",
+        "selector": "text=Features",
+        "selectors": [
+          "text=Features",
+          "div > ul:nth-of-type(2) > li:nth-of-type(3) > a > span",
+          "span"
+        ]
+      },
+      {
+        "id": "step_175",
+        "index": 175,
+        "type": "navigate",
+        "url": "https://www.odoo.com/app/website-features"
+      },
+      {
+        "id": "step_176",
+        "index": 176,
+        "type": "assert",
+        "selector": "text=Skip to Content",
+        "selectors": [
+          "text=Skip to Content",
+          "#wrapwrap .btn.rounded-0",
+          ".btn.rounded-0",
+          ".btn",
+          "div > a",
+          "a"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Skip to Content"
+      },
+      {
+        "id": "step_177",
+        "index": 177,
+        "type": "assert",
+        "selector": "#top_menu .start-0.dropdown-menu",
+        "selectors": [
+          "#top_menu .start-0.dropdown-menu",
+          ".start-0.dropdown-menu",
+          ".start-0",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Finance\n                                        \n                                            Account"
+      },
+      {
+        "id": "step_178",
+        "index": 178,
+        "type": "assert",
+        "selector": "#footer [role=\"menu\"]",
+        "selectors": [
+          "#footer [role=\"menu\"]",
+          "[role=\"menu\"]",
+          "#footer .dropdown-menu",
+          ".dropdown-menu",
+          "div > div:nth-of-type(2) > div:nth-of-type(1) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "الْعَرَبيّة\n                    \n                    \n    \n                         Català\n         "
+      },
+      {
+        "id": "step_179",
+        "index": 179,
+        "type": "assert",
+        "selector": "[role=\"dialog\"]",
+        "selectors": [
+          "[role=\"dialog\"]",
+          "#o_live_modal",
+          ".modal.fade",
+          ".modal",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_180",
+        "index": 180,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div",
+        "selectors": [
+          "div:nth-of-type(2) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_181",
+        "index": 181,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div",
+        "selectors": [
+          "div:nth-of-type(2) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_182",
+        "index": 182,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_183",
+        "index": 183,
+        "type": "assert",
+        "selector": "#o_live_modal .modal-body.bg-200",
+        "selectors": [
+          "#o_live_modal .modal-body.bg-200",
+          ".modal-body.bg-200",
+          ".modal-body",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(2)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_184",
+        "index": 184,
+        "type": "assert",
+        "selector": "text=Watch now",
+        "selectors": [
+          "text=Watch now",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Watch now"
+      },
+      {
+        "id": "step_185",
+        "index": 185,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_186",
+        "index": 186,
+        "type": "assert",
+        "selector": "#three-ds-container",
+        "selectors": [
+          "#three-ds-container",
+          "div:nth-of-type(4) > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_187",
+        "index": 187,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(4)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(4)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_188",
+        "index": 188,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(6)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(6)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_189",
+        "index": 189,
+        "type": "click",
+        "action_text": "Showcase",
+        "selector": "text=Showcase",
+        "selectors": [
+          "text=Showcase",
+          "div > ul:nth-of-type(2) > li:nth-of-type(4) > a > span",
+          "span"
+        ]
+      },
+      {
+        "id": "step_190",
+        "index": 190,
+        "type": "navigate",
+        "url": "https://www.odoo.com/website-builder-showcase"
+      },
+      {
+        "id": "step_191",
+        "index": 191,
+        "type": "assert",
+        "selector": "text=Skip to Content",
+        "selectors": [
+          "text=Skip to Content",
+          "#wrapwrap .btn.rounded-0",
+          ".btn.rounded-0",
+          ".btn",
+          "div:nth-of-type(1) > a",
+          "a"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Skip to Content"
+      },
+      {
+        "id": "step_192",
+        "index": 192,
+        "type": "assert",
+        "selector": "#top_menu .start-0.dropdown-menu",
+        "selectors": [
+          "#top_menu .start-0.dropdown-menu",
+          ".start-0.dropdown-menu",
+          ".start-0",
+          "header > div > ul:nth-of-type(2) > li:nth-of-type(1) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Finance\n                                        \n                                            Account"
+      },
+      {
+        "id": "step_193",
+        "index": 193,
+        "type": "assert",
+        "selector": "div:nth-of-type(1) > main > div:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(1) > main > div:nth-of-type(1) > section:nth-of-type(1) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_194",
+        "index": 194,
+        "type": "assert",
+        "selector": "#footer [role=\"menu\"]",
+        "selectors": [
+          "#footer [role=\"menu\"]",
+          "[role=\"menu\"]",
+          "#footer .dropdown-menu",
+          ".dropdown-menu",
+          "div > div:nth-of-type(2) > div:nth-of-type(1) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "الْعَرَبيّة\n                    \n                    \n    \n                         Català\n         "
+      },
+      {
+        "id": "step_195",
+        "index": 195,
+        "type": "assert",
+        "selector": "[role=\"dialog\"]",
+        "selectors": [
+          "[role=\"dialog\"]",
+          "#o_live_modal",
+          ".modal.fade",
+          ".modal",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_196",
+        "index": 196,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div",
+        "selectors": [
+          "div:nth-of-type(2) > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_197",
+        "index": 197,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div",
+        "selectors": [
+          "div:nth-of-type(2) > div > div",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_198",
+        "index": 198,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(2) > div > div > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Odoo Experience on YouTube\n                            \n                            \n               "
+      },
+      {
+        "id": "step_199",
+        "index": 199,
+        "type": "assert",
+        "selector": "#o_live_modal .modal-body.bg-200",
+        "selectors": [
+          "#o_live_modal .modal-body.bg-200",
+          ".modal-body.bg-200",
+          ".modal-body",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(2)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_200",
+        "index": 200,
+        "type": "assert",
+        "selector": "text=Watch now",
+        "selectors": [
+          "text=Watch now",
+          "div:nth-of-type(2) > div > div > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Watch now"
+      },
+      {
+        "id": "step_201",
+        "index": 201,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_202",
+        "index": 202,
+        "type": "assert",
+        "selector": "#three-ds-container",
+        "selectors": [
+          "#three-ds-container",
+          "div:nth-of-type(4) > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_203",
+        "index": 203,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(4)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(4)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_204",
+        "index": 204,
+        "type": "assert",
+        "selector": "div:nth-of-type(4) > div:nth-of-type(6)",
+        "selectors": [
+          "div:nth-of-type(4) > div:nth-of-type(6)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_205",
+        "index": 205,
+        "type": "click",
+        "action_text": "Services",
+        "selector": "text=Services",
+        "selectors": [
+          "text=Services",
+          "div > ul:nth-of-type(2) > li:nth-of-type(5) > a > span",
+          "span"
+        ]
+      },
+      {
+        "id": "step_206",
+        "index": 206,
+        "type": "navigate",
+        "url": "https://design.odoo.com/"
+      },
+      {
+        "id": "step_207",
+        "index": 207,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(2) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_208",
+        "index": 208,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div:nth-of-type(3)",
+        "selectors": [
+          "div:nth-of-type(2) > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_209",
+        "index": 209,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div:nth-of-type(4)",
+        "selectors": [
+          "div:nth-of-type(2) > div:nth-of-type(4)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_210",
+        "index": 210,
+        "type": "click",
+        "action_text": "about us",
+        "selector": "text=about us",
+        "selectors": [
+          "text=about us",
+          "ul > ul > li:nth-of-type(2) > a > span",
+          "span"
+        ]
+      },
+      {
+        "id": "step_211",
+        "index": 211,
+        "type": "navigate",
+        "url": "https://design.odoo.com/about-us"
+      },
+      {
+        "id": "step_212",
+        "index": 212,
+        "type": "assert",
+        "selector": "[role=\"presentation\"] [role=\"menu\"]",
+        "selectors": [
+          "[role=\"presentation\"] [role=\"menu\"]",
+          "[role=\"menu\"]",
+          "[role=\"presentation\"] .dropdown-menu",
+          ".dropdown-menu",
+          "div > ul > ul > li:nth-of-type(4) > ul",
+          "ul"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Web design\n        \n    \n    \n        \n            Logo design\n        \n    \n    \n        \n         "
+      },
+      {
+        "id": "step_213",
+        "index": 213,
+        "type": "assert",
+        "selector": "div > footer > div > video",
+        "selectors": [
+          "div > footer > div > video",
+          "video"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Your browser does not support the video tag."
+      },
+      {
+        "id": "step_214",
+        "index": 214,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(2) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_215",
+        "index": 215,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div:nth-of-type(3)",
+        "selectors": [
+          "div:nth-of-type(2) > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_216",
+        "index": 216,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div:nth-of-type(4)",
+        "selectors": [
+          "div:nth-of-type(2) > div:nth-of-type(4)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_217",
+        "index": 217,
+        "type": "click",
+        "action_text": "services",
+        "selector": "[role=\"presentation\"] [role=\"menuitem\"]",
+        "selectors": [
+          "[role=\"presentation\"] [role=\"menuitem\"]",
+          "[role=\"menuitem\"]",
+          "text=services",
+          "[role=\"presentation\"] .nav-link",
+          ".nav-link",
+          "div > ul > ul > li:nth-of-type(4) > a",
+          "a"
+        ]
+      },
+      {
+        "id": "step_218",
+        "index": 218,
+        "type": "click",
+        "action_text": "Photography",
+        "selector": "text=Photography",
+        "selectors": [
+          "text=Photography",
+          "li:nth-of-type(4) > ul > li:nth-of-type(3) > a > span",
+          "span"
+        ]
+      },
+      {
+        "id": "step_219",
+        "index": 219,
+        "type": "navigate",
+        "url": "https://design.odoo.com/services/web-design#photography"
+      },
+      {
+        "id": "step_220",
+        "index": 220,
+        "type": "assert",
+        "selector": "#wrap .h-100.w-100",
+        "selectors": [
+          "#wrap .h-100.w-100",
+          ".h-100.w-100",
+          ".h-100",
+          "div > div > div:nth-of-type(1) > div:nth-of-type(2) > img",
+          "img"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_221",
+        "index": 221,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div:nth-of-type(1)",
+        "selectors": [
+          "div:nth-of-type(2) > div:nth-of-type(1)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_222",
+        "index": 222,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div:nth-of-type(3)",
+        "selectors": [
+          "div:nth-of-type(2) > div:nth-of-type(3)",
+          "div"
+        ],
+        "assert_type": "element_visible",
+        "auto_captured": true,
+        "captured_text": "Modal opened"
+      },
+      {
+        "id": "step_223",
+        "index": 223,
+        "type": "assert",
+        "selector": "div:nth-of-type(2) > div:nth-of-type(4)",
+        "selectors": [
+          "div:nth-of-type(2) > div:nth-of-type(4)",
           "div"
         ],
         "assert_type": "element_visible",
