@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+
+  browser-box:
+    image: selenium/standalone-chrome:latest
+    container_name: browser-box
+    ports:
+      - "4444:4444"
+      - "7900:7900"
+
+  runner:
+    build:
+      context: ./runner
+    container_name: runner
+    depends_on:
+      - browser-box
+    stdin_open: true
+    tty: true

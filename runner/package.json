@@ -1,0 +1,14 @@
+{
+  "name": "runner",
+  "version": "1.0.0",
+  "description": "Selenium runner container",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-webdriver": "^4.41.0"
+  }
+}
